@@ -1,0 +1,8 @@
+body {
+    background-color: #000; /* 背景颜色设置为黑色（可更改为您想要的颜色）*/
+    color: #fff; /* 文本颜色设置为白色 */
+    text-align: center; /* 文本居中 */
+    background-image: url('C:/Users/owen2/OneDrive/桌面/專題/vscode/素材/background.jpg'); /* 更换 'path/to/your/image.jpg' 为您图片的路径 */
+    background-size: cover; /* 图片尺寸适应屏幕 */
+    /* 其他背景属性，例如背景颜色、平铺方式等 */
+}
