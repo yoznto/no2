@@ -10,7 +10,7 @@ body {
 }
 
 /* 根据屏幕宽度调整样式 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     body {
         /* 在小屏幕上的样式设置 */
         background-image: url('images/mobile-background.jpg'); /* 移动设备背景图片路径 */
