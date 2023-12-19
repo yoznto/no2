@@ -4,16 +4,23 @@ body {
     text-align: center; /* 文本居中 */
     background-image: url('images/background.jpg'); /* 图片路径 */
     /* 其他背景属性，例如背景颜色、平铺方式等 */
-
+    background-image: url('images/IMG_2100.jpg'); /* 图片路径 */
     /* 其他默认样式 */
     /* ... */
 }
 
 /* 根据屏幕宽度调整样式 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     body {
         /* 在小屏幕上的样式设置 */
         background-image: url('images/mobile-background.jpg'); /* 移动设备背景图片路径 */
+        /* 可针对小屏幕添加其他样式 */
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        /* 在小屏幕上的样式设置 */
+        background-image: url('images/mobile-IMG_2100.jpg'); /* 移动设备背景图片路径 */
         /* 可针对小屏幕添加其他样式 */
     }
 }
