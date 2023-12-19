@@ -3,7 +3,6 @@ body {
     color: #fff; /* 文本颜色设置为白色 */
     text-align: center; /* 文本居中 */
     background-image: url('images/background.jpg'); /* 图片路径 */
-    background-size: cover; /* 图片尺寸适应屏幕 */
     /* 其他背景属性，例如背景颜色、平铺方式等 */
 
     /* 其他默认样式 */

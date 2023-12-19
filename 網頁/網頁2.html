@@ -2,16 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>開發人員列表</title>
+    <title>返回</title>
     <link rel="stylesheet" href="styles.css">
-
+    <style>
+        /* 设置团队按钮样式 */
+        .team-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+        /* 设置版本号样式 */
+        .version {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
+    <button class="team-button" onclick="showDevelopers()">返回</button>
+
     <h1>開發人員列表</h1>
     <ul id="developerList">
-        <li>網頁製作:有勝</li>
-        <li></li>
-        <!-- 添加更多开发人员 -->
+        <li>網頁製作: 有勝</li>
+        <li><!-- Add more developers here --></li>
     </ul>
+
+    <!-- 版本号 -->
+    <div class="version">v1.1.1</div>
+
+    <script>
+        function showDevelopers() {
+            window.location.href = 'index.html'; // 跳转到另一个页面
+        }
+    </script>
 </body>
 </html>
