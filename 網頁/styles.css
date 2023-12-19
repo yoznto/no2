@@ -16,7 +16,7 @@ body {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px)and (orientation: portrait) {
     body {
         /* 在更小的屏幕上的样式设置 */
         background-image: url('images/mobile-IMG_2100.jpg'); /* 480px以下屏幕的背景图片路径 */
