@@ -2,7 +2,8 @@
 body {
     color: #fff; /* 文本颜色设置为白色 */
     text-align: center; /* 文本居中 */
-    background-image: url('images/background.jpg'); /* 默认背景图片路径 */
+    /* 默认背景图片路径 */
+    background-image: url('images/background.jpg'); /* 电脑背景图片路径 */
     /* 其他默认样式 */
     /* ... */
 }
@@ -10,16 +11,8 @@ body {
 /* 根据屏幕宽度调整样式 */
 @media screen and (max-width: 768px) {
     body {
-        /* 在小屏幕上的样式设置 */
-        background-image: url('images/mobile-background.jpg'); /* 768px以下屏幕的背景图片路径 */
+        /* 在小屏幕（手机）上的样式设置 */
+        background-image: url('images/IMG_2100.jpg'); /* 手机背景图片路径 */
         /* 可针对小屏幕添加其他样式 */
-    }
-}
-
-@media screen and (max-width: 480px)and (orientation: portrait) {
-    body {
-        /* 在更小的屏幕上的样式设置 */
-        background-image: url('images/mobile-IMG_2100.jpg'); /* 480px以下屏幕的背景图片路径 */
-        /* 可针对更小屏幕添加其他样式 */
     }
 }
