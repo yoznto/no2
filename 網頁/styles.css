@@ -2,14 +2,19 @@
 body {
     color: #fff; /* 文本颜色设置为白色 */
     text-align: center; /* 文本居中 */
-    background-image: url('images/background.jpg'); /* 更换 'path/to/your/image.jpg' 为您图片的路径 */
+    background-image: url('images/background.jpg'); /* 图片路径 */
     background-size: cover; /* 图片尺寸适应屏幕 */
     /* 其他背景属性，例如背景颜色、平铺方式等 */
+
+    /* 其他默认样式 */
+    /* ... */
 }
 
 /* 根据屏幕宽度调整样式 */
 @media screen and (max-width: 768px) {
     body {
         /* 在小屏幕上的样式设置 */
+        background-image: url('images/mobile-background.jpg'); /* 移动设备背景图片路径 */
+        /* 可针对小屏幕添加其他样式 */
     }
 }
