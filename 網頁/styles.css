@@ -5,3 +5,7 @@ body {
     background-size: cover; /* 图片尺寸适应屏幕 */
     /* 其他背景属性，例如背景颜色、平铺方式等 */
 }
+img, video {
+    max-width: 100%; /* 图像和视频的最大宽度 */
+    height: auto; /* 高度自适应，防止图像拉伸变形 */
+}
