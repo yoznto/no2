@@ -12,7 +12,7 @@ body {
 @media screen and (max-width: 980px) {
     body {
         /* 在小屏幕（手机）上的样式设置 */
-        background-image: url('images/IMG_2100.jpg'); /* 手机背景图片路径 */
+        background-image: url('images/unnamed.jpg'); /* 手机背景图片路径 */
         /* 可针对小屏幕添加其他样式 */
     }
 }
