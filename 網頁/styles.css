@@ -100,7 +100,7 @@ body{
   background: rgb(248, 96, 253);
   position: fixed;
   top: 10px;
-  right: 15px;
+  left: 15px;
   border-radius: 10px;
   display: flex;
   justify-content:  center;
