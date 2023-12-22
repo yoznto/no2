@@ -116,5 +116,5 @@ body{
 }
 .toggLebtn.active .open,
 .toggLebtn .close{
-  display: nano;
+  display: none;
 }
