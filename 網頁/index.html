@@ -1,89 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>多语言选择</title>
-    <link rel="stylesheet" href="styles.css">
-    <title>開發人員列表</title>
-    <title>ESP32 控制燈光</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* 设置团队按钮样式 */
-        .team-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 9999;
-        }
-        /* 设置版本号样式 */
-        .version {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background-color: rgba(0, 0, 0, 0.041);
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 12px;
-        }
-    </style>
-</head>
-<body>
-    <button class="team-button" onclick="showDevelopers()">開發人員列表</button>
-
-    <h1 id="title">多语言选择示例</h1>
-
-    <!-- 语言选择下拉菜单 -->
-    <select id="languageDropdown" onchange="changeLanguage()">
-        <option value="zh">中文</option>
-        <option value="en">English</option>
-        <option value="jp">日本語</option>
-        <option value="kr">한국어</option>
-        <option value="ch">中文简体</option>
-    </select>
-
-    <!-- 版本号 -->
-    <div class="version">v1.1.2</div>
-
-    <!-- 您自定义的 JavaScript -->
-    <script>
-        function changeLanguage() {
-            const selectElement = document.getElementById('languageDropdown');
-            const selectedLanguage = selectElement.value;
-            const title = document.getElementById('title');
-
-            // 设置页面标题的文本
-            switch (selectedLanguage) {
-                case 'zh':
-                    title.textContent = '歡迎來到我的網站';
-                    break;
-                case 'en':
-                    title.textContent = 'Welcome to my website';
-                    break;
-                case 'jp':
-                    title.textContent = '私のウェブサイトへようこそ';
-                    break;
-                case 'kr':
-                    title.textContent = '내 웹사이트에 오신 것을 환영합니다';
-                    break;
-                case 'ch':
-                    title.textContent = '欢迎来到我的网站';
-                    break;
-                default:
-                    title.textContent = '多语言选择示例';
-            }
-        }
-        
-        function showDevelopers() {
-            window.location.href = '網頁2.html'; // 跳转到另一个页面
-        }
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/44a11d6622.js"crossorigin="anonymous"></script>
+        <link rel="stylesheet"href="./style.css">
+        <title>Animated NavBar</title>
+        </head>
+        <body>
+            <div class="NavBar">
+                <u1>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon>
+                                <i class="fas fa-home"></i>
+                            </span>
+                        </a>
+                    </li>
+                </u1>
+            </div>
+            <script src="./script.js"></script>
+        </body>
 </html>

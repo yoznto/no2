@@ -7,7 +7,21 @@ body {
     /* 其他默认样式 */
     /* ... */
 }
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #bluetooth-menu {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
 
+  button {
+    margin-right: 10px;
+  }
 /* 根据屏幕宽度调整样式 */
 @media screen and (max-width: 980px) {
     body {
