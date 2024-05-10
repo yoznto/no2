@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/44a11d6622.js"crossorigin="anonymous"></script>
-        <link reL="stylesheet" href="./styles.css">
-        <title>Animated NavBar</title>
-        </head>
-        <body>
-            <div class="navbar">
-                <u1>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <i class="fas fa-home"></i>
-                            </span>
-                            <span class="text">首頁</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <i class="fas fa-address-card"></i>
-                            </span>
-                            <span class="text">關於</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <i class="fas fa-sign-out-alt"></i>
-                            </span>
-                            <span class="text">離開</span>
-                </u1>
-            </div>
-            <div class="togglebtn">
-                <span class="open">
-                    <i class="fas fa-bars"></i>
-                </span>
-                <spend class="close">
-                  <i class="fas fa-times"></i>  
-                </spend>
-            </div>
-            <script src="./script.js"></script>
-        </body>
+<head>
+    <meta charset="UTF-8">
+    <img src="images/background.jpg" alt="我的图片">
+    <title>多语言选择</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>開發人員列表</title>
+    <style>
+        /* 设置团队按钮样式 */
+        .team-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <button class="team-button" onclick="showDevelopers()">開發人員列表</button>
+
+    <script>
+        function showDevelopers() {
+            window.location.href = '網頁2.html'; // 跳转到另一个页面
+        }
+    </script>
+
+    <h1 id="title">多语言选择示例</h1>
+
+    <!-- 语言选择下拉菜单 -->
+    <select id="languageDropdown" onchange="changeLanguage()">
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+        <option value="jp">日本語</option>
+        <option value="kr">한국어</option>
+        <option value="ch">中文简体</option>
+    </select>
+
+    <!-- 您自定义的 JavaScript -->
+    <script>
+        function changeLanguage() {
+            const selectElement = document.getElementById('languageDropdown');
+            const selectedLanguage = selectElement.value;
+            const title = document.getElementById('title');
+
+            // 设置页面标题的文本
+            switch (selectedLanguage) {
+                case 'zh':
+                    title.textContent = '歡迎來到我的網站';
+                    break;
+                case 'en':
+                    title.textContent = 'Welcome to my website';
+                    break;
+                case 'jp':
+                    title.textContent = '私のウェブサイトへようこそ';
+                    break;
+                case 'kr':
+                    title.textContent = '내 웹사이트에 오신 것을 환영합니다';
+                    break;
+                case 'ch':
+                    title.textContent = '欢迎来到我的网站';
+                    break;
+                default:
+                    title.textContent = '多语言选择示例';
+            }
+        }
+    </script>
+</body>
 </html>
